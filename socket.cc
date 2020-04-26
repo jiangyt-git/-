@@ -36,12 +36,12 @@ int socket(const char * host, int clientport) {
   } else {
   /* gethostbyname()  用域名或者主机名获取地址，失败返回NULL,成功返回结构hostent的指针：
     struct hostent {
-      char  *h_name;            /* official name of host，www.baidu.com的规范名其实是www.a.shifen.com */
-      char **h_aliases;         /* alias list，www.baidu.com就是baidu的别名 */
-      int    h_addrtype;        /* host address type ，ipv4(AF_INET)*/
-      int    h_length;          /* length of address */
-      char **h_addr_list;       /* list of addresses ，是网络字节序，需要通过inet_ntop函数转换。*/
-      char *h_addr;             /* synonym for h_addr_list[0]; in other words, it is the first host address. */
+      char  *h_name;            // official name of host，www.baidu.com的规范名其实是www.a.shifen.com 
+      char **h_aliases;         // alias list，www.baidu.com就是baidu的别名 
+      int    h_addrtype;        // host address type ，ipv4(AF_INET)
+      int    h_length;          // length of address 
+      char **h_addr_list;       // list of addresses ，是网络字节序，需要通过inet_ntop函数转换。
+      char *h_addr;             // synonym for h_addr_list[0]; in other words, it is the first host address. 
    }
   */ 
 
